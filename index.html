@@ -1,0 +1,264 @@
+<html>
+<head>
+  <title>Real Time Image Identification App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<center>
+
+  <h1 id="MF"> Case Study Between Google Lense & Mobilenet </h1>
+  <h3 id="SR"> Google Lense </h3>
+  <img src="Image 1.png" width="50" height="50"
+  <br>
+  <h4 id="TC"> Vs </h1>
+
+ <h3 id="cc"> Mobilenet </h3>
+
+ <ol>
+
+  <div class="test_image_and_result col-xs-12">
+    <li class="col-sm-4 col-xs-12">
+      <b>Test Image - </b>
+      <img id="img2" src="mug.webp" class="img-responsilve">
+    </li>
+    <h5 id="SR" class="col-sm-4 col-xs-12">
+      Output on <br>GOOGLE LENS</h5>
+      <span></span>
+    </h5>
+
+    <h5 id="FM" class="col-sm-4 col-xs-12">
+      Output on <br>MOBILENET</h5>
+      <span></span>
+    </h5>
+
+    <div class="mini_result col-xs-12">
+      <h4 id="SR"> Result -  </h4>
+      <hr>
+      <h4></h4>
+    </div>
+  
+   <br>
+
+   <div class="test_image_and_result col-xs-12">
+    <li class="col-sm-4 col-xs-12">
+      <b>Test Image - </b>
+      <img id="img2" src="toy.png" class="img-responsilve">
+    </li>
+    <h5 id="coco" class="col-sm-4 col-xs-12">
+      Output on <br>GOOGLE LENS</h5>
+      <span></span>
+    </h5>
+
+    <h5 id="nut" class="col-sm-4 col-xs-12">
+      Output on <br>MOBILENET</h5>
+      <span></span>
+    </h5>
+
+    <div class="mini_result col-xs-12">
+      <h4 hen> Result -  </h4>
+      <hr>
+      <h4></h4>
+    </div>
+
+    <br>
+
+    <div class="test_image_and_result col-xs-12">
+      <li class="col-sm-4 col-xs-12">
+        <b>Test Image - </b>
+        <img id="img2" src="pillow.jpg" class="img-responsilve">
+      </li>
+      <h5 id="egg" class="col-sm-4 col-xs-12">
+        Output on <br>GOOGLE LENS</h5>
+        <span></span>
+      </h5>
+  
+      <h5 id="tree" class="col-sm-4 col-xs-12">
+        Output on <br>MOBILENET</h5>
+        <span></span>
+      </h5>
+  
+      <div class="mini_result col-xs-12">
+        <h4 id="cat"> Result -  </h4>
+        <hr>
+        <h4></h4>
+      </div>
+
+      <br>
+
+      <div class="test_image_and_result col-xs-12">
+        <li class="col-sm-4 col-xs-12">
+          <b>Test Image - </b>
+          <img id="img2" src="blanket.png" class="img-responsilve">
+        </li>
+        <h5 id="sit" class="col-sm-4 col-xs-12">
+          Output on <br>GOOGLE LENS</h5>
+          <span></span>
+        </h5>
+    
+        <h5 id="cat" class="col-sm-4 col-xs-12">
+          Output on <br>MOBILENET</h5>
+          <span></span>
+        </h5>
+    
+        <div class="mini_result col-xs-12">
+          <h4 id="sat"> Result -  </h4>
+          <hr>
+          <h4></h4>
+        </div>
+
+        <br>
+
+        <div class="test_image_and_result col-xs-12">
+          <li class="col-sm-4 col-xs-12">
+            <b>Test Image - </b>
+            <img id="img2" src="chair.jpg" class="img-responsilve">
+          </li>
+          <h5 id="cup" class="col-sm-4 col-xs-12">
+            Output on <br>GOOGLE LENS</h5>
+            <span></span>
+          </h5>
+      
+          <h5 id="cut" class="col-sm-4 col-xs-12">
+            Output on <br>MOBILENET</h5>
+            <span></span>
+          </h5>
+      
+          <div class="mini_result col-xs-12">
+            <h4 id="ink"> Result -  </h4>
+            <hr>
+            <h4></h4>
+          </div>
+
+          <br>
+
+          <div class="test_image_and_result col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+              <b>Test Image - </b>
+              <img id="img2" src="mango.jpg" class="img-responsilve">
+            </li>
+            <h5 id="pen" class="col-sm-4 col-xs-12">
+              Output on <br>GOOGLE LENS</h5>
+              <span></span>
+            </h5>
+        
+            <h5 id="hit" class="col-sm-4 col-xs-12">
+              Output on <br>MOBILENET</h5>
+              <span></span>
+            </h5>
+        
+            <div class="mini_result col-xs-12">
+              <h4 id="pot"> Result -  </h4>
+              <hr>
+              <h4></h4>
+            </div>
+
+            <br>
+
+            <div class="test_image_and_result col-xs-12">
+              <li class="col-sm-4 col-xs-12">
+                <b>Test Image - </b>
+                <img id="img2" src="pen.png" class="img-responsilve">
+              </li>
+              <h5 id="eat" class="col-sm-4 col-xs-12">
+                Output on <br>GOOGLE LENS</h5>
+                <span></span>
+              </h5>
+          
+              <h5 id="ate" class="col-sm-4 col-xs-12">
+                Output on <br>MOBILENET</h5>
+                <span></span>
+              </h5>
+          
+              <div class="mini_result col-xs-12">
+                <h4 id="mat"> Result -  </h4>
+                <hr>
+                <h4></h4>
+              </div>
+
+              <br>
+
+              <div class="test_image_and_result col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                  <b>Test Image - </b>
+                  <img id="img2" src="macbook.jpg" class="img-responsilve">
+                </li>
+                <h5 id="bat" class="col-sm-4 col-xs-12">
+                  Output on <br>GOOGLE LENS</h5>
+                  <span></span>
+                </h5>
+            
+                <h5 id="no" class="col-sm-4 col-xs-12">
+                  Output on <br>MOBILENET</h5>
+                  <span></span>
+                </h5>
+            
+                <div class="mini_result col-xs-12">
+                  <h4 id="yes"> Result -  </h4>
+                  <hr>
+                  <h4></h4>
+                </div>
+
+                <br>
+
+                <div class="test_image_and_result col-xs-12">
+                  <li class="col-sm-4 col-xs-12">
+                    <b>Test Image - </b>
+                    <img id="img2" src="bag.jpg" class="img-responsilve">
+                  </li>
+                  <h5 id="net" class="col-sm-4 col-xs-12">
+                    Output on <br>GOOGLE LENS</h5>
+                    <span></span>
+                  </h5>
+              
+                  <h5 id="leg" class="col-sm-4 col-xs-12">
+                    Output on <br>MOBILENET</h5>
+                    <span></span>
+                  </h5>
+              
+                  <div class="mini_result col-xs-12">
+                    <h4 id="in"> Result -  </h4>
+                    <hr>
+                    <h4></h4>
+                  </div>
+
+                  <br>
+
+                  <div class="test_image_and_result col-xs-12">
+                    <li class="col-sm-4 col-xs-12">
+                      <b>Test Image - </b>
+                      <img id="img2" src="book.jpg" class="img-responsilve">
+                    </li>
+                    <h5 id="on" class="col-sm-4 col-xs-12">
+                      Output on <br>GOOGLE LENS</h5>
+                      <span></span>
+                    </h5>
+                
+                    <h5 id="now" class="col-sm-4 col-xs-12">
+                      Output on <br>MOBILENET</h5>
+                      <span></span>
+                    </h5>
+                
+                    <div class="mini_result col-xs-12">
+                      <h4 id="book"> Result -  </h4>
+                      <hr>
+                      <h4></h4>
+                    </div>
+  
+  <br>
+
+ </ol>
+
+<script src="main.js"></script>
+</body>
+
+</html>
+
+
